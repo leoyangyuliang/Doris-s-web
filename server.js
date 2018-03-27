@@ -7,6 +7,10 @@ var mysql      = require('mysql');
 
 //configuration
 var connection = mysql.createConnection({
+    host     : 'leoyang.cjieasm0avvk.us-east-2.rds.amazonaws.com',
+    user     : 'yangyuliang',
+    password : '49876aaa',
+    database : 'yangyuliang'
 });
 
 

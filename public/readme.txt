@@ -1,11 +1,3 @@
 
 
-things need to be add
-
-
-·in draw()
-  pointLight, ambientMaterial, background draw sun and moon.
-  时钟
-
-
-·
+created by Yuliang Yang, 2018-03-24
