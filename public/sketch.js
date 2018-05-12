@@ -61,9 +61,9 @@ function myCallback(fetch) {
 function preload(){
   //fetchData123(fetchTest);
 	// data = loadJSON("sample.json");
-	// // sun = loadImage("/sun.png");
-	// // moon = loadImage("/moon.png");
-	// earth = loadImage("/earth2.jpg");
+	// sun = loadImage("/sun.png");
+	// moon = loadImage("/moon.png");
+	earth = loadImage("/earth2.jpg");
 }
 
 function setup() {
@@ -82,7 +82,7 @@ function setup() {
 
 
 	 //draw moon and sun
-	 //canvas = createCanvas(1000	,450,WEBGL);
+	 canvas = createCanvas(1000	,450,WEBGL);
 	 // if(sc < 50)
 	 // {
 		//  texture(moon)
@@ -261,27 +261,29 @@ function unhightlight(){
 	 clock.html(time);
 	 china_time = calcTime('北京时间', '8');
 	 china_clock.html(china_time);
-}
-// 	 // let dx = mouseX - width / 2;
-// 		// let dy = mouseY - height / 2;
-//   	// let v = createVector(dx, dy, 0);
-//   	// v.div(100);
-//    //
-// 		// //draw 3D earth
-// 	 // push();
-// 	 // translate(150,0,0);
-// 	 // background(0,0,0,0);
-// 	 // noStroke();
-// 	 // //ambientLight(200,200,200,0,0,1);
-// 	 // directionalLight(180,225,255,-1,0.1,0.4);
-// 	 // //ambientLight(0,0,255);
-// 	 // //normalMaterial(100,200,255);
-// 	 // texture(earth);
-// 	 // rotateY(angle*0.003);
-// 	 // scale(0.7);
-// 	 // sphere(150);
-//    //
-// 	 // pop();
+   //
+	 // let dx = mouseX - width / 2;
+		// let dy = mouseY - height / 2;
+  	// let v = createVector(dx, dy, 0);
+  	// v.div(100);
+
+ 		// //draw 3D earth
+	 push();
+	 translate(150,0,0);
+	 background(0,0,0,0);
+	 noStroke();
+	 //ambientLight(200,200,200,0,0,1);
+	 directionalLight(180,225,255,-1,0.1,0.4);
+	 //ambientLight(0,0,255);
+	 //normalMaterial(100,200,255);
+    angle = angle+1;
+	 texture(earth);
+	 rotateY(angle*0.005);
+	 scale(0.7);
+	 sphere(150);
+	 pop();
+
+ }
 //
 // 	 //draw sun
 // 	 // push();
